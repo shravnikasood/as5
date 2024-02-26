@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,11 +8,11 @@
     <button id="white">White</button>
     <button id="black">Black</button>
     <button id="random">Random</button>
-    
+    <button id="pink">Pink</button> 
+
     <script>
 
-        function switchToBlack()
-        {
+        function switchToBlack() {
             let body_element = document.getElementById("body_element");
             body_element.style = "background-color:black";
         }
@@ -22,46 +21,48 @@
         black.addEventListener("click", switchToBlack);
 
 
-        function switchToWhite()
-        {
+        function switchToWhite() {
             let body_element = document.getElementById("body_element");
             body_element.style = "background-color:white";            
         }
 
         let white = document.getElementById("white");
-        white.addEventListener("click", switchToWhite );
+        white.addEventListener("click", switchToWhite);
 
-        function switchToRandom()
-        {
+        function switchToRandom() {
             let body_element = document.getElementById("body_element");
             let random_color = Math.floor(Math.random() * 5);
             
-            if (random_color == 0)
-            {
+            if (random_color == 0) {
                 body_element.style = "background-color:red";
             }
-            else if (random_color == 1)
-            {
+            else if (random_color == 1) {
                 body_element.style = "background-color:green";
             }
-            else if (random_color == 2)
-            {
+            else if (random_color == 2) {
                 body_element.style = "background-color:blue";
             }
-            else if (random_color == 3)
-            {
+            else if (random_color == 3) {
                 body_element.style = "background-color:orange";
             }
-            else if (random_color == 4)
-            {
+            else if (random_color == 4) {
                 body_element.style = "background-color:purple";
             }
-
         }
 
         let random = document.getElementById("random");
         random.addEventListener("click", switchToRandom);
 
+        
+        function switchToPink() {
+            let body_element = document.getElementById("body_element");
+            body_element.style = "background-color:pink";            
+        }
+
+        let pink = document.getElementById("pink");
+        pink.addEventListener("click", switchToPink);
+
     </script>
 </body>
 </html>
+
